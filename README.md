@@ -1,5 +1,7 @@
-##Fake News Classification using Explainable AI
-This repository contains a comprehensive study on Fake News Classification using two datasets: the ISOT benchmark dataset and the Fake News dataset from Kaggle. We employ machine learning models and Explainable AI (XAI) techniques to provide insights into model predictions.
+Fake News Classification using Explainable AI
+
+This repository contains a comprehensive study on Fake News Classification using two datasets: the ISOT benchmark dataset and the Fake News dataset from Kaggle. 
+We employ machine learning models and Explainable AI (XAI) techniques to provide insights into model predictions.
 
 Table of Contents
 Project Overview
