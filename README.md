@@ -1,65 +1,71 @@
-Fake News Classification using Explainable AI
+# **Fake News Classification using Explainable AI**
 
-This repository contains a comprehensive study on Fake News Classification using two datasets: the ISOT benchmark dataset and the Fake News dataset from Kaggle. 
-We employ machine learning models and Explainable AI (XAI) techniques to provide insights into model predictions.
+This repository presents a comprehensive study on Fake News Classification using two datasets: the ISOT benchmark dataset and the Fake News dataset from Kaggle. We employ machine learning models and Explainable AI (XAI) techniques to gain insights into model predictions, ensuring transparency and interpretability.
 
+# *Project Overview:*
 
-Project Overview:
+This project aims to classify news articles as Fake or Real using various machine learning models. We explore two widely used fake news datasets and demonstrate the importance of model interpretability by leveraging Explainable AI techniques, specifically SHAP (SHapley Additive exPlanations), to understand model decisions.
 
-This project aims to classify news articles as Fake or Real using machine learning models. We explore two widely used fake news datasets and demonstrate the importance of model interpretability by applying Explainable AI techniques, such as SHAP (SHapley Additive exPlanations), to understand model decisions.
-
-Datasets
+# *Datasets:*
 
 ISOT Dataset
 
-The ISOT dataset contains news articles from legitimate and fake news sources. It is commonly used as a benchmark for fake news detection tasks.
+Description: Contains news articles from legitimate and fake news sources, commonly used as a benchmark for fake news detection tasks.
 
 Size: 44,898 articles
+
 Classes: Real and Fake news
+
 Source: ISOT Fake News Dataset
+
 Kaggle Fake News Dataset
-The Fake News dataset from Kaggle includes various features like the news title, text, and author. It is suitable for building models that classify the credibility of news articles.
+
+Description: Includes features like news title, text, and author, making it suitable for building models that classify news credibility.
 
 Size: ~20,800 articles
+
 Classes: Real and Fake news
+
 Source: Kaggle Fake News Dataset
-Modeling Approach
+
+# *Modeling Approach*
+
 We employ several machine learning models to tackle the classification task:
 
 Logistic Regression
+
 Random Forest
+
 Support Vector Machines (SVM)
-XGBoost
-Feature Engineering
-For both datasets, we apply preprocessing techniques like:
 
-Text cleaning (removing punctuation, stopwords, etc.)
-Vectorization (using TF-IDF and Word2Vec)
-Handling missing values and balancing the dataset
-Explainable AI (XAI) Techniques
-Model transparency is key for understanding predictions, especially in critical applications like fake news detection. We apply the following XAI methods to explain the results:
+Naive Bayes
 
-SHAP (SHapley Additive exPlanations):
+# *Feature Engineering*
 
-A method based on cooperative game theory that explains the contribution of each feature to the model’s prediction.
+For both datasets, we apply the following preprocessing techniques:
 
-LIME (Local Interpretable Model-Agnostic Explanations): 
-A technique to locally approximate the decision boundary of black-box models.
-These explanations help in validating model predictions and detecting potential biases in the model.
+Text Cleaning: Removing punctuation, stopwords, and special characters
 
-(We have used only SHAP in our experiments)
+Vectorization: Using TF-IDF for feature extraction
 
-Results:
+Handling Missing Values: Addressing missing data for robustness
 
-Accuracy: We compare model performance on both datasets using accuracy, precision, recall, and F1-score.
+# *Explainable AI (XAI) Techniques*
 
-Explanations: SHAP and LIME visualizations provide insights into how each feature contributes to the classification decision.
+Model transparency is essential for understanding predictions, especially in critical applications like fake news detection. We employ SHAP (SHapley Additive exPlanations) to explain the contribution of each feature to the model’s predictions.
 
-Future Work:
+SHAP: A cooperative game theory-based method that quantifies the impact of each feature on the final prediction, helping to validate model decisions and detect potential biases.
 
-Deep Learning Models: Incorporate LSTM or Transformer models to improve accuracy on larger datasets.
+# *Results*
 
-Real-time Detection: Implement the model as a web service or API for real-time fake news detection.
+Model Performance: We compare models based on accuracy, precision, recall, and F1-score.
 
-Additional Datasets: Explore more datasets to enhance model generalizability.
+Explanations: SHAP visualizations provide insights into how features influence classification decisions.
 
+# *Future Work*
+
+Deep Learning Models: Incorporate LSTM or Transformer-based architectures to improve accuracy on larger datasets.
+
+Real-time Detection: Develop a web service or API for real-time fake news detection.
+
+Additional Datasets: Explore diverse datasets to enhance model generalizability and robustness.
